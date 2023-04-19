@@ -2,12 +2,8 @@ from typing import List
 
 
 def board_check(new_cords: tuple) -> bool:
-    if all(0 < cords <= 8 for cords in new_cords):
-        return True
-    else:
-        print('We cant be like these cords')
-        return False
-
+    x, y = new_cords
+    return 0 <= x <= 7 and 0 <= y <= 7
 
 class Figure:
     color: str = "black"
