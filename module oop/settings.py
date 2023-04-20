@@ -1,11 +1,5 @@
-"""Этот код определяет несколько констант, используемых в игре:
-PLAYER_LIVES: количество жизней, с которыми игрок начинает игру.
-ALLOWED_ATTACKS: список целых чисел, представляющих разрешенные варианты атаки для игрока.
-КОМАНДЫ: список строк, представляющих доступные команды в меню игры.
-Эти константы используются на протяжении всей игры и не предназначены для изменения во время выполнения."""
-
-PLAYER_LIVES = 2
-ALLOWED_ATTACKS = [1, 2, 3]
-COMMANDS = ['help', 'start', 'show scores', 'exit']
-
-HARD_MODE_MULTIPLIER = 3
+INITIAL_PLAYER_NAME: int = 3
+INITIAL_ENEMY_LEVEL: int = 1
+SCORE_SUCCESS_ATTACK: int = 1
+SCORE_ENEMY_DOWN: int = 6
+COMMANDS = [ 'start', 'help', 'show scores', 'exit']
