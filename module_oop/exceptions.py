@@ -4,4 +4,4 @@ class EnemyDown(Exception):
 
 class GameOver(Exception):
    'This is for GameOver'
-   
+
