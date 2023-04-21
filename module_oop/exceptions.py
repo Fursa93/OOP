@@ -1,8 +1,7 @@
 class EnemyDown(Exception):
-    pass
-    """Exception when the enemy is defeated"""
+    'This is for EnemyDown'
 
 
 class GameOver(Exception):
-    pass
-    """Exception when the player is defeated"""
+   'This is for GameOver'
+   
