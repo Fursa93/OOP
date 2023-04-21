@@ -12,12 +12,12 @@ class Enemy:
         self.health -= 1
         if self.health < 1:
             raise exceptions.EnemyDown
- 
+
 
 
     @staticmethod
     def select_attack():
-        return random.randint(1, 3) # 1-Knight, 2-Thiev, 3-Wizart
+        return random.randint(1, 3)  # 1-Knight, 2-Thiev, 3-Wizart
 
     @staticmethod
     def select_defence() -> int:
@@ -64,15 +64,12 @@ class Player:
         print('result_fight: ', self.result_fight)
         if self.result_fight == 'win':
             enemy.decrease_health()
-            print('YOUR DEFENCE IS SUCCESSFUL!', 'enemy_health', enemy.health,
-                  'my_health', self.health)
+            print('YOUR DEFENCE IS SUCCESSFUL!')
         elif self.result_fight == 'loose':
             self.decrease_health()
-            print('YOUR DEFENCE IS FAILED!', 'enemy_health', enemy.health,
-                  'my_health', self.health)
+            print('YOUR DEFENCE IS FAILED!')
         elif self.result_fight == 'draw':
-            print('IT’S A DRAW!', 'enemy_health', enemy.health,
-                  'my_health', self.health)
+            print('IT’S A DRAW!')
 
     @staticmethod
     def fight(attack, defence) -> str:
@@ -98,5 +95,7 @@ class Player:
             choice = input('Please make your choice to defend, it must be 1,2 or 3 \n \
             WIZARD  = 1, THIEF = 2,  KNIGHT = 3 ')
         return int(choice)
+
+
 
 
