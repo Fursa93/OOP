@@ -4,9 +4,9 @@ import exceptions
 
 
 class Enemy:
-    def __init__(self, level, health) -> None:
+    def __init__(self, level: int = settings.INITIAL_ENEMY_LEVEL) -> None:
         self.level = level
-        self.health = health
+        self.health = level * settings.INITIAL_ENEMY_HEALTH
 
     def decrease_health(self) -> None:
         self.health -= 1
