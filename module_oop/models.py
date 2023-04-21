@@ -10,7 +10,9 @@ class Enemy:
 
     def decrease_health(self) -> None:
         self.health -= 1
-        if self.health < 1: raise exceptions.EnemyDown
+        if self.health < 1:
+            raise exceptions.EnemyDown
+ 
 
 
     @staticmethod
