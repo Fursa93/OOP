@@ -1,7 +1,11 @@
 class EnemyDown(Exception):
-    'This is for EnemyDown'
+    """
+    This is for EnemyDown
+    """
 
 
 class GameOver(Exception):
-   'This is for GameOver'
+    """
+    This is for GameOver
+    """
 
